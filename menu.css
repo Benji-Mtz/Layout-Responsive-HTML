@@ -1,0 +1,33 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #e8e8e8;
+}
+
+.menu {
+    list-style: none;
+    padding: 0;
+    background: #092337;
+    width: 90%;
+    max-width: 1000px;
+    /* Centramos el menu horizantalmente */
+    margin: 20px auto;
+}
+
+
+.menu li {
+    /* Asi <li> solo abarca lo que necesita no el 100% del ancho */
+    display: inline-block;
+    text-align: center;
+}
+
+.menu li a {
+    color: #FFF;
+    text-decoration: none;
+    /* pasamos en inline a block para el <a> */
+    display: block;
+    padding: 20px;
+}
+
+.menu li a:hover {
+    background: #ef8354;
+}

@@ -1,0 +1,139 @@
+* {
+    margin: 0;
+    padding: 0;
+
+    /* Hace que el tamaño de la caja no crezca con padding o bordes de default */
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    background: #4a465b;
+}
+
+.contenedor {
+    width: 1000px;
+    /* Arriba y abajo con 20px y centramos la pantalla auto para el centro */
+    margin: 20px auto;
+    /* Contenedor de .main y aside */
+    overflow: hidden;
+}
+
+header {
+    background: #FFF;
+}
+
+header nav {
+    width: 100%;
+}
+
+header nav ul {
+    width: 100%;
+    /* overflow en el padre para que englobe el float: left */
+    overflow: hidden;
+    list-style-type: none;
+}
+
+header nav ul li {
+    /* display: inline-block; */
+    float: left;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    display: inline-block;
+    padding: 15px 20px;
+    color: #000;
+}
+
+header nav ul li a:hover {
+    background-color: #000;
+    color: #FFF;
+}
+
+.main {
+    width: 700px;
+    background: #FFF;
+    /* Bloque Izq */
+    float: left;
+
+}
+
+.main .imagen {
+    width: 100%;
+}
+
+.main .imagen img {
+    width: 100%;
+    vertical-align: top;
+}
+
+.main .posts {
+    padding: 40px;
+}
+
+.main .posts article h2 {
+    margin-bottom: 20px;
+    color: #424242;
+}
+
+.main .posts article p {
+    margin-bottom: 15px;
+    line-height: 27px;
+} 
+
+aside {
+    width: 300px;
+    background-color: #161f26;
+    padding: 20px;
+    color: #FFF;
+    /* Bloque Der */
+    float: left;
+}
+
+aside .widget {
+    margin-bottom: 20px;
+}
+
+aside .widget .titulo {
+    color: #FF8000;
+    border-bottom: 1px solid #FF8000;
+    margin-bottom: 10px;
+}
+
+aside .widget ul {
+    list-style: none;
+}
+
+aside .widget ul li {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    padding: 10px 0;
+}
+
+aside .widget ul li a {
+    color: #FFF;
+    text-decoration: none;
+}
+
+aside .widget ul li a:hover {
+    color: #8f8f8f;
+}
+
+aside .widget p {
+    line-height: 27px;
+}
+
+footer {
+    /* 700px para que abarque solo lo del lado izq o articulos */
+    width: 700px;
+    /* overflow: hidden; */
+    /* clear: both; para que el footer empiece en una nueva linea con 700px*/
+    clear: both;
+    background-color: #000;
+    color: #FFF;
+    padding: 15px 0;
+    text-align: center;
+}
